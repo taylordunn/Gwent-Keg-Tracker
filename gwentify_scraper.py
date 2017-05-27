@@ -1,4 +1,5 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 
 def get_cards():
@@ -49,34 +50,11 @@ def write_cards(cards_dict):
 
 def read_cards():
     with open('cards.json') as infile:
-        cards = json.loads(infile)
+        cards = json.load(infile)
         infile.close()
         return cards
 
 if __name__ == '__main__':
     cards = get_cards()
     write_cards(cards)
-    read_cards()
-    
-
-
-
-
-
-
-#get_cards()
-
-#print(soup.prettify())
-#print(page.json())
-
-"""
-next_list = requests.get(test.json()['next'])
-
-h2 class = 'entry-title'
-a rel = 'bookmark'
-ul class = card-cats
-
-page = requests.get('http://dataquestio.github.io/web-scraping-pages/simple.htlm')
-soup = BeautifulSoup(page.content, 'html.parser')
-print(soup.prettify())
-"""
+    cards = read_cards()
