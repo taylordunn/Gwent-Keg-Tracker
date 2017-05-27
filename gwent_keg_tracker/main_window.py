@@ -170,8 +170,8 @@ class MainWindow(QWidget):
     def save_kegs(self):
         try:
             name = QFileDialog.getSaveFileName(self, 'Save file')
-            print(self.keg_df)
             self.keg_df.to_csv(name[0], index=False)
+            self.keg_df.to_csv('kegs_backup.csv', index=False)
         except BaseException as e:
             error_message = QMessageBox()
             error_message.setText("Save file failed: " + str(e))
