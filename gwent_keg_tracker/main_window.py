@@ -74,6 +74,18 @@ class MainWindow(QWidget):
             self.card_checkbox_list.append(QCheckBox(self))
 
     def init_keg_interface(self):
+        self.add_keg_button = QPushButton("Add Keg")
+        self.add_keg_button.clicked.connect(self.add_keg)
+
+        self.keg_table = QTableWidget()
+        self.keg_table.setRowCount(0)
+        self.keg_table.setColumnCount(7)
+        self.keg_table.setHorizontalHeaderLabels(['Card 1', 'Card 2',
+            'Card 3', 'Card 4', 'Picked card',
+            'Unpicked card 1', 'Unpicked card 2'])
+        self.keg_table.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.keg_table.resizeColumnsToContents()
+
         if os.path.isfile('kegs_autoload.csv'):
             self.keg_df = pd.read_csv('kegs_autoload.csv')
             self.update_table()
@@ -82,18 +94,6 @@ class MainWindow(QWidget):
                                               'card3', 'card4', 'picked_card',
                                               'unpicked_card1',
                                               'unpicked_card2'])
-
-        self.add_keg_button = QPushButton("Add Keg")
-        self.add_keg_button.clicked.connect(self.add_keg)
-
-        self.keg_table = QTableWidget()
-        self.keg_table.setRowCount(len(self.keg_df.index))
-        self.keg_table.setColumnCount(7)
-        self.keg_table.setHorizontalHeaderLabels(['Card 1', 'Card 2',
-            'Card 3', 'Card 4', 'Picked card',
-            'Unpicked card 1', 'Unpicked card 2'])
-        self.keg_table.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.keg_table.resizeColumnsToContents()
 
         self.save_kegs_button = QPushButton("Save Kegs")
         self.save_kegs_button.clicked.connect(self.save_kegs)
@@ -170,6 +170,7 @@ class MainWindow(QWidget):
     def save_kegs(self):
         try:
             name = QFileDialog.getSaveFileName(self, 'Save file')
+            print(self.keg_df)
             self.keg_df.to_csv(name[0], index=False)
         except BaseException as e:
             error_message = QMessageBox()
