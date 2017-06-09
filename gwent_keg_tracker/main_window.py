@@ -127,6 +127,7 @@ class MainWindow(QWidget):
         self.keg_df = self.keg_df.append(
                 pd.DataFrame([card_names],
                              columns=self.keg_df.columns))
+        self.keg_df.to_csv('kegs_backup.csv', index=False)
         self.update_table()
 
     def update_table(self):
@@ -171,7 +172,6 @@ class MainWindow(QWidget):
         try:
             name = QFileDialog.getSaveFileName(self, 'Save file')
             self.keg_df.to_csv(name[0], index=False)
-            self.keg_df.to_csv('kegs_backup.csv', index=False)
         except BaseException as e:
             error_message = QMessageBox()
             error_message.setText("Save file failed: " + str(e))
