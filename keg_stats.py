@@ -26,7 +26,11 @@ if __name__ == '__main__':
 
     # Patch on August 30 added new cards, and renamed/reclassified old ones.
     cards_df_170831 = load_cards('old/cards_170831.json')
-    date_170831 = pd.to_datetime("2017-08-30")
+    date_170831 = pd.to_datetime('2017-08-30')
+    
+    # Returning to game after midwinter patch
+    cards_df_180209 = load_cards('old/cards_180209.csv')
+    date_180209 = pd.to_datetime('2018-02-08')
 
     kegs_df = pd.read_csv('kegs_autoload.csv')
     kegs_df = kegs_df[['date', 'card1', 'card2', 'card3', 'card4',
@@ -59,6 +63,8 @@ if __name__ == '__main__':
         card_date = keg.loc['date']
         if card_date < date_170831:
             cards_df = cards_df_170831
+        elif card_date < date_180209:
+            cards_df = cards_df_180209
         else:
             cards_df = cards_df_current
 

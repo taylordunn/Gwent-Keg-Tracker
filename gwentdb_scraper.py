@@ -2,16 +2,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-def get_cards2():
-    cards = []
-    page = requests.get('https://gwentdb.com/cards?filter-display=1')
-    return(page.status_code)
-
-    if page.status_code == 200:
-        soup = BeautifulSoup(page.content, 'html.parser')
-
-        rows = soup.find_all('tr')
-
 def get_cards():
     cards = []
     page = requests.get('http://gwentdb.com/cards?filter-display=1')
