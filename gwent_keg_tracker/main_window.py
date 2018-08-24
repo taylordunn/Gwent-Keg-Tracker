@@ -4,7 +4,7 @@ import pandas as pd
 import datetime
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QFrame, QLabel, QCheckBox, QPushButton, \
-                            QComboBox, QHBoxLayout, QVBoxLayout, QGridLayout, \
+                            QComboBox, QLineEdit, QHBoxLayout, QVBoxLayout, QGridLayout, \
                             QTableWidget, QTableWidgetItem, QSizePolicy, \
                             QAbstractScrollArea, QMessageBox, QFileDialog
 
@@ -22,11 +22,18 @@ class MainWindow(QWidget):
 
         layout = QGridLayout()
         col_spacing = 2
-        combo_layout = [(0,0), (0,col_spacing),
-                        (0,2*col_spacing), (0,3*col_spacing),
-                        (1,col_spacing-1), (1,2*col_spacing-1),
-                        (1,3*col_spacing-1)]
         scale = 5
+
+        layout.addWidget(self.info_lineedit_list[0], 0, 0,
+                         1, 2*col_spacing*scale-1)
+        layout.addWidget(self.info_lineedit_list[1], 0, 2*col_spacing*scale,
+                         1, 2*col_spacing*scale-1)
+
+
+        combo_layout = [(1,0), (1,col_spacing),
+                        (1,2*col_spacing), (1,3*col_spacing),
+                        (2,col_spacing-1), (2,2*col_spacing-1),
+                        (2,3*col_spacing-1)]
         for i,combo in enumerate(self.card_combobox_list):
             row,col = combo_layout[i] 
 
@@ -48,8 +55,19 @@ class MainWindow(QWidget):
 
 
     def init_comboboxes(self):
+        self.info_lineedit_list = []
         self.card_combobox_list = []
         self.card_checkbox_list = []
+
+        # Add a line for patch number
+        lineedit = QLineEdit(self)
+        lineedit.setPlaceholderText("Patch")
+        self.info_lineedit_list.append(lineedit)
+        # Add a line for special events
+        lineedit = QLineEdit(self)
+        lineedit.setPlaceholderText("Special event")
+        self.info_lineedit_list.append(lineedit)
+
         for i in range(4):
             combo = QComboBox(self)
             combo.setEditable(True)
@@ -90,7 +108,7 @@ class MainWindow(QWidget):
             self.keg_df = pd.read_csv('kegs_autoload.csv')
             self.update_table()
         else:
-            self.keg_df = pd.DataFrame(columns = ['date', 'card1', 'card2',
+            self.keg_df = pd.DataFrame(columns = ['date', 'patch', 'event', 'card1', 'card2',
                                               'card3', 'card4', 'picked_card',
                                               'unpicked_card1',
                                               'unpicked_card2'])
@@ -123,16 +141,25 @@ class MainWindow(QWidget):
                     card_name += "*"
                 card_names.append(card_name)
         time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        patch = self.info_lineedit_list[0].text()
+        event = self.info_lineedit_list[1].text()
         card_names.insert(0, time)
+        card_names.insert(1, patch)
+        card_names.insert(2, event)
         self.keg_df = self.keg_df.append(
                 pd.DataFrame([card_names],
                              columns=self.keg_df.columns))
         self.keg_df.to_csv('kegs_backup.csv', index=False)
         self.update_table()
 
+        # Reset card text fields and check boxes
+        for i in range(7):
+            self.card_combobox_list[i].setCurrentText("")
+            self.card_checkbox_list[i].setChecked(False)
+
     def update_table(self):
         """
-        Sort keg_df by date and repopulation the rows of keg_table.
+        Sort keg_df by date and repopulate the rows of keg_table.
         """
         self.keg_df.date = pd.to_datetime(self.keg_df.date)
         self.keg_df.sort_values(by='date', ascending=False, inplace=True)

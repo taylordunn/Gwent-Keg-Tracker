@@ -32,6 +32,10 @@ if __name__ == '__main__':
     cards_df_180209 = load_cards('old/cards_180209.csv')
     date_180209 = pd.to_datetime('2018-02-08')
 
+    # Returning to game briefly before homecoming
+    cards_df_180823 = load_cards('old/cards_180823.json')
+    date_180823 = pd.to_datetime('2018-08-23')
+
     kegs_df = pd.read_csv('kegs_autoload.csv')
     kegs_df = kegs_df[['date', 'card1', 'card2', 'card3', 'card4',
                        'picked_card']]
@@ -65,6 +69,8 @@ if __name__ == '__main__':
             cards_df = cards_df_170831
         elif card_date < date_180209:
             cards_df = cards_df_180209
+        elif card_date < date_180823:
+            cards_df = cards_df_180823
         else:
             cards_df = cards_df_current
 
