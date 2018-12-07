@@ -3,49 +3,24 @@ import json
 from bs4 import BeautifulSoup
 
 def get_cards():
-    cards = []
-    page = requests.get('http://gwentdb.com/cards?filter-display=1')
+    # A simple function to scrape just name and href from the gwentdb.net website
+    card_list = []
+    page = requests.get('https://gwentdb.net/card_info')
 
-    while page.status_code == 200:
+    if page.status_code == 200:
         soup = BeautifulSoup(page.content, 'html.parser')
 
-        rows = soup.find_all('tr')[1:]
-        for row in rows:
-            card_url = row.td.a.get('href')
+        cards = soup.find_all('div', {'class': 'card_name'})
 
-            card_page = requests.get('http://gwentdb.com' + card_url)
+        for card in cards:
+            card_name = card.get('name')
+            card_href = card.find('a').get('href')
 
-            if card_page.status_code == 200:
-                card_dict = {}
-                card_soup = BeautifulSoup(card_page.content, 'html.parser')
+            print(card_name)
+            card_dict = {'name': card_name, 'href': card_href}
+            card_list.append(card_dict)
 
-                card_name = card_soup.find('div', {'class': 'card-name'}). \
-                        find('h1').get_text()
-                card_name = card_name.splitlines()[1].lstrip()
-                
-                card_rarity = card_soup.find('div', {'class': 'card-rarity'}). \
-                        find('span').get_text()
-                card_group = card_soup.find('div', {'class': 'card-type'}). \
-                        find('span').get_text()
-                card_faction = card_soup.find('div', {'class': 'card-faction'}). \
-                        find('a').get_text()
-                 
-
-                print(card_name)
-                card_dict['name'] = card_name
-                card_dict['rarity'] = card_rarity
-                card_dict['group'] = card_group
-                card_dict['faction'] = card_faction
-                cards.append(card_dict)
-
-        try:
-            next_page = soup.find('ul', class_='b-pagination-list'). \
-                                  find('a', rel='next').get('href')
-            page = requests.get('http://gwentdb.com' + next_page)
-        except:
-            break
-
-    return cards
+    return card_list
 
 def write_cards(cards_dict):
     with open('cards.json', 'w') as outfile:
