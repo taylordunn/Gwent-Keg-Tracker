@@ -25,12 +25,14 @@ class MainWindow(QWidget):
         scale = 5
 
         # Use an additional scaling factor to fix the width of these lineedits
-        scale2 = 2/3
+        scale2 = 1/2
         layout.addWidget(self.info_lineedit_list[0], 0, 0,
                          1, (2*col_spacing*scale-1)*scale2)
         layout.addWidget(self.info_lineedit_list[1], 0, 2*col_spacing*scale*scale2,
                          1, (2*col_spacing*scale-1)*scale2)
         layout.addWidget(self.info_lineedit_list[2], 0, 4*col_spacing*scale*scale2,
+                         1, (2*col_spacing*scale-1)*scale2)
+        layout.addWidget(self.info_lineedit_list[3], 0, 6*col_spacing*scale*scale2,
                          1, (2*col_spacing*scale-1)*scale2)
 
 
@@ -67,6 +69,10 @@ class MainWindow(QWidget):
         lineedit = QLineEdit(self)
         lineedit.setPlaceholderText("Patch")
         self.info_lineedit_list.append(lineedit)
+        # Add a line for prestige number
+        lineedit = QLineEdit(self)
+        lineedit.setPlaceholderText("Prestige")
+        self.info_lineedit_list.append(lineedit)
         # Add a line for keg type
         lineedit = QLineEdit(self)
         lineedit.setPlaceholderText("Keg type")
@@ -76,18 +82,21 @@ class MainWindow(QWidget):
         lineedit.setPlaceholderText("Special event")
         self.info_lineedit_list.append(lineedit)
 
+        # Filter out Leaders
+        nonleader_cards = self.cards_df[self.cards_df.group != 'Leader']
+
         for i in range(4):
             combo = QComboBox(self)
             combo.setEditable(True)
             # Add an empty item so that nothing is selected to begin
             combo.addItem("")
-            combo.addItems(self.cards_df.index.values)
+            combo.addItems(nonleader_cards.index.values)
             combo.lineEdit().setPlaceholderText("Card %d" % (i+1))
             self.card_combobox_list.append(combo)
             self.card_checkbox_list.append(QCheckBox(self))
 
         combo_text = ['Picked card', 'Unpicked card 1', 'Unpicked card 2']
-        # The current gwentdb.net does not offer rarity or group information
+        # The current gwent.one does not offer rarity information
         #rare_cards_df = self.cards_df[self.cards_df.rarity.isin(['Rare',
                                                                  #'Epic',
                                                                  #'Legendary'])]
@@ -95,9 +104,7 @@ class MainWindow(QWidget):
             combo = QComboBox(self)
             combo.setEditable(True)
             combo.addItem("")
-            # The current gwentdb.net does not offer rarity or group information
-            #combo.addItems(rare_cards_df.index.values)
-            combo.addItems(self.cards_df.index.values)
+            combo.addItems(nonleader_cards.index.values)
             combo.lineEdit().setPlaceholderText(combo_text[i])
             self.card_combobox_list.append(combo)
             self.card_checkbox_list.append(QCheckBox(self))
@@ -119,8 +126,8 @@ class MainWindow(QWidget):
             self.keg_df = pd.read_csv('kegs.csv')
             self.update_table()
         else:
-            self.keg_df = pd.DataFrame(columns=['date', 'patch', 'keg_type','event', 'card1', 'card2',
-                                                'card3', 'card4','picked_card', 'unpicked_card1', 'unpicked_card2'])
+            self.keg_df = pd.DataFrame(columns=['date', 'patch', 'prestige', 'keg_type', 'event', 'card1', 'card2',
+                                                'card3', 'card4', 'picked_card', 'unpicked_card1', 'unpicked_card2'])
 
         self.save_kegs_button = QPushButton("Save Kegs")
         self.save_kegs_button.clicked.connect(self.save_kegs)
@@ -151,12 +158,14 @@ class MainWindow(QWidget):
                 card_names.append(card_name)
         time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         patch = self.info_lineedit_list[0].text()
-        keg_type = self.info_lineedit_list[1].text()
-        event = self.info_lineedit_list[2].text()
+        prestige = self.info_lineedit_list[1].text()
+        keg_type = self.info_lineedit_list[2].text()
+        event = self.info_lineedit_list[3].text()
         card_names.insert(0, time)
         card_names.insert(1, patch)
-        card_names.insert(2, keg_type)
-        card_names.insert(3, event)
+        card_names.insert(2, prestige)
+        card_names.insert(3, keg_type)
+        card_names.insert(4, event)
         self.keg_df = self.keg_df.append(pd.DataFrame([card_names], columns=self.keg_df.columns))
         self.keg_df.to_csv('kegs_backup.csv', index=False)
         self.update_table()
@@ -197,11 +206,12 @@ class MainWindow(QWidget):
 
         cards_dict = {}
         cards_dict['name'] = [card['name'] for card in cards]
-        # The current gwentdb.net does not offer rarity or group information
-        #cards_dict['group'] = [card['group'] for card in cards]
+        # The current gwent.one scraper does not offer rarity information, and limited group information (leader only)
+        cards_dict['group'] = [card['group'] for card in cards]
         #cards_dict['rarity'] = [card['rarity'] for card in cards]
 
         df = pd.DataFrame(cards_dict)
+        df.sort_values(by='name', ascending=True, inplace=True)
         df.set_index('name', inplace=True)
         return df
 

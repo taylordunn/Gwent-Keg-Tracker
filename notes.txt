@@ -1,4 +1,4 @@
-Closed beta rewards
+﻿Closed beta rewards
 Pioneer title
 1 card
 36 kegs
@@ -404,3 +404,42 @@ Lacerate = 30
 5970 scraps total
 189460 - 5970 = 183490 remaining
 
+
+Third craft
+Patch 1.2.0.9_541
+Team Aretuza meta snapshot Feb 15 2019
+Big Monsters
+185 - 15 = 170 rewards points for Gernichora
+
+Gold
+Whispess = 200
+Weavess = 200
+Brewess = 200
+Werecat = 200
+800
+
+Bronze
+Cyclops = 80
+celaeno harpy = 80
+harpy egg = 80
+240
+
+1040 scraps total
+182907 - 1040 = 181907
+
+Fourth craft
+Dettlaff thrive control
+https://gwentup.com/decks/8959
+
+Gold
+Protofleder = 200
+Geralt of rivia = 800
+Regis bloodlust = 800
+Enraged ifrit = 200
+gregoire de gorgon = 200
+Bronze
+Plumard x2 = 30x2 = 60
+Bruxa x2 = 80x2 = 160
+
+2200 + 220 = 3400 scraps total
+181592 - 3400 = 179172 remaining

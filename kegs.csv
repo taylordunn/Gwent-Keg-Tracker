@@ -1,4 +1,18 @@
-date,patch,keg_type,event,card1,card2,card3,card4,picked_card,unpicked_card1,unpicked_card2
-2018-11-16 18:06:22,1.0.0.15,base set,,Slave Hunter,Trophy Catch,Predatory Dive,Tridam Infantry,Foglet,Biting Frost,Battering Ram
-2018-11-16 18:04:41,1.0.0.15,base set,,Combat Engineer,Nauzicaa Sergeant,Poor Fucking Infantry,Venendal Elite,Ancient Foglet,Impenetrable Fog,Daerlan Soldier
-2018-11-16 17:57:01,1.0.0.15,base set,,Wyvern,Heymaey Protector,Ointment,Field Medic,An Craite Longship,Blue Stripes Scout,Impenetrable Fog
+date,patch,prestige,keg_type,event,card1,card2,card3,card4,picked_card,unpicked_card1,unpicked_card2
+2019-07-13 15:32:25,3.0.1.92,1,premium base set,,An Craite Greatsword*,Deithwen Arbalest*,Temerian Infantry*,Vran Warrior*,Tuirseach Veteran*,Waylay*,Aedirnian Mauler*
+2019-07-13 15:31:28,3.0.1.92,1,premium base set,,Emissary*,Vran Warrior*,Alchemist*,Wild Hunt Rider*,Cursed Knight*,Vicovaro Novice*,Impenetrable Fog*
+2019-07-13 15:30:25,3.0.1.92,1,premium base set,,Slave Hunter*,Mahakam Marauder*,Mastercrafted Spear*,Pyrotechnician*,Forbidden Magic*,Slyzard*,Incinerating Trap*
+2019-07-13 15:29:14,3.0.1.92,1,premium base set,,Mahakam Ale*,Winch*,Petri's Philter*,Slave Driver*,Vicovaro Novice*,Biting Frost*,Tuirseach Veteran*
+2019-07-13 15:27:52,3.0.1.92,1,premium base set,,Frightener: Dormant*,Dol Blathanna Sentry*,Temerian Infantry*,Dol Blathanna Archer*,Blue Stripes Commando*,Nauzicaa Brigade*,Raging Bear*
+2019-07-13 15:25:41,3.0.1.92,1,premium base set,,Raging Bear*,Werewolf*,Lyrian Arbalest*,Elven Wardancer*,Dwarven Agitator*,Experimental Remedy*,Tuirseach Veteran*
+2019-07-13 15:23:14,3.0.1.92,1,premium base set,,Assassination*,Nekker Warrior*,Dol Blathanna Sentry*,Vran Warrior*,Nilfgaardian Knight*,Golden Froth*,Battering Ram*
+2019-07-13 15:20:31,3.0.1.92,1,premium base set,,Tuirseach Bearmaster*,Fire Scorpion*,Ointment*,Poor Fucking Infantry*,Schirrú*,Ermion*,Falibor*
+2019-07-13 15:18:30,3.0.1.92,1,novigrad,,Kikimore Warrior,Swindle,Cutup Lackey,Arena Endrega,Witch Hunter Executioner,Fisstech Trafficker,Tidecloak Ransackers
+2019-07-13 15:16:42,3.0.1.92,1,crimson curse,,Svalblod Cultist,Dryad's Caress,Samum,Dryad Grovekeeper,Svalblod Priest,Oxenfurt Scholar,Forest Whisperer
+2019-07-13 15:15:08,3.0.1.92,1,monster,,Bruxa,Wyvern,Forktail,Plumard,Harpy Egg,Celaeno Harpy,Fleder
+2019-07-13 15:14:22,3.0.1.92,1,monster,,Ice Troll,Cockatrice,Bridge Troll,Siren,Celaeno Harpy,Hideous Feast,Foglet
+2019-07-13 15:13:03,3.0.1.92,1,monster,,Vran Warrior,Wyvern,Barbegazi,Arachas Nest,Fleder,Ice Troll,Harpy Egg
+2019-07-13 15:10:55,3.0.1.92,1,base set,,Vrihedd Brigade,Heymaey Protector,Mardroeme,Mahakam Ale,Dol Blathanna Bowman,Cyclops,Rivian Pikeman
+2018-11-16 18:06:22,1.0.0.15,0,base set,,Slave Hunter,Trophy Catch,Predatory Dive,Tridam Infantry,Foglet,Biting Frost,Battering Ram
+2018-11-16 18:04:41,1.0.0.15,0,base set,,Combat Engineer,Nauzicaa Sergeant,Poor Fucking Infantry,Venendal Elite,Ancient Foglet,Impenetrable Fog,Daerlan Soldier
+2018-11-16 17:57:01,1.0.0.15,0,base set,,Wyvern,Heymaey Protector,Ointment,Field Medic,An Craite Longship,Blue Stripes Scout,Impenetrable Fog
