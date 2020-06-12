@@ -443,3 +443,155 @@ Bruxa x2 = 80x2 = 160
 
 2200 + 220 = 3400 scraps total
 181592 - 3400 = 179172 remaining
+
+
+
+Fifth craft is between option (A) and (B) from TLG meta report
+
+(A) Gudrun Bincy
+
+Gold
+Sigi Reuven = 800
+Bindy = 200
+Flying Redanian = 800
+Philippa Eilhart = 800
+Moreelse = 200
+Caleb Menge = 800
+Horst Borsodi = 200
+Boris = 200
+4000
+
+Bronze
+
+
+4000 scraps total
+
+(B) Harald Pointslam
+10 reward points for Harald: 304-10 = 294
+
+Gold
+Olaf = 800
+Harald Houndsnout = 200
+Knut = 800
+Skjall = 200
+Djenge Frett = 200
+Ulfhedinn = 800
+3000
+
+Bronze
+Drummon Shieldmaiden x2 = 160
+Svalblod Priest = 80
+Svalblood Ravager = 30
+270
+
+3270 scraps total
+179144 - 3270 = 175874
+
+Go with (B) for now
+
+---------------------------
+Patch 3.1
+https://playgwent.com/en/news/29104/patch-3-1-patch-notes
+Full mill value
+John Natalis
+Winch = 1 premium = 80s + 200d
+Bombardment (previously known as Trebuchet) = 30s
+Bloody Flail
+Foltest's Pride
+Battering Ram
+Siege Tower = 2 = can't mill
+Siege Master = 1 = 30s
+Siege Support = 2 = can't mill
+Keira Metz
+Dethmold
+Damned Sorceress
+Ban Ard Tutor = 1 = 30s
+Roche: Merciless
+Bloody Baron
+Mad Kiyan (previously known as Kiyan)
+Falibor
+Thaler 
+Hubert Rejk
+Prince Stennis = 1 = can't mill
+Odrin
+Reynard Odo = 1 normal + 1 premium = 3200s + can't mill
+Forbidden Magic = 1 normal + 1 premium = 80s + 80s + 200d = 160s + 200d
+Kaedweni Cavalry
+Temerian Drummer = 2 = can't mill
+Dun Banner
+Rivian Pikeman = 1 = 80s
+Black Rayla = 1 normal + 1 premium = 800s + can't mill
+
+---------------------------
+Patch 3.2
+https://playgwent.com/en/news/29638/patch-3-2-patch-notes
+
+Full mill value
+Hemdall 
+Svalblod Cultist = 1 = 80
+Gremist
+Corrupted Flaminica 
+Tuirseach Bearmaster = 1 normal + 1 premium = 80s + 80s + 200d = 160s 
+Restore 
+Cerys an Craite = 1 = 800
+Waylay
+Panther = 1 = 30
+Half-Elf Hunter = 2 = 60
+Weeping Willow = 1 = 200
+Bruxa = 4 = 80x4 = 320
+Garkain = 1 = 30
+Nekurat
+
+
+-----------------------------
+Returning after a long break
+Patch 6.3.0.92
+2020-06-08
+
+Spare card milled: 7 commons = 70s + 10d
+Current counts: 684 ore - 182593 scraps - 6745 dust - 3 kegs - 348 rp
+
+spending some of the 348 reward points
+most effective strategy to maximize ore: go for story nodes with least rp possible
+https://docs.google.com/spreadsheets/d/15O7TL1NPNliouDGCu-IK7Kw7OkFZ9VLxzI4wfJd5u1g/edit#gid=0
+Scoia'tael faction tree: 25 rp for 1650 ore
+Skellige faction tree: 27 rp for 1750 ore ---(already spent some here)--> 24 rp for 1500 ore (+2 base kegs)
+
+Cost-effective strategy: focus on a specific deck and get faction-specific kegs
+Current tier 1 deck: Soldiers Ball NG
+https://teamleviathangaming.com/meta/
+https://www.playgwent.com/en/decks/2161827a810a2b96a9db610facd6fdcd
+Before buying kegs: missing 17 cards worth 7660 scraps
+After 10 NG kegs: missing 13 cards worth 7230 scraps (non-gold: 1 copy of Magne Division)
+After 23(10+13) NG kegs: missing 10 cards worth 6030 scraps (opened Ramon, still missing Magne Division)
+After 33(23+10) NG kegs: missing 8 cards worth 5030 scraps (opened Masquerade and Joachim, still missing Magne Division)
+After 38(33+5) NG kegs: same
+spare card milled: 52 common + 17 rare = 860s
+
+5040s total
+
+
+After buying 30 NG kegs, missing:
+Vincent Van Moorlehem = 800
+Maraal = 800
+Yennefer's Invocation = 800
+Affan Hillergrand = 800
+Ffion var Gaernel = 800
+Van Moorlehem's Cupbearer = 200
+Magne Divison = 30
+Magic Lamp = 800
+
+
+
+1+1+5+1+5 = 13
+1+5 = 6
+1+5 = 6
+
+684
+2334 - 684
+
+
+
+
+
+

@@ -1,18 +1,106 @@
 date,patch,prestige,keg_type,event,card1,card2,card3,card4,picked_card,unpicked_card1,unpicked_card2
-2019-07-13 15:32:25,3.0.1.92,1,premium base set,,An Craite Greatsword*,Deithwen Arbalest*,Temerian Infantry*,Vran Warrior*,Tuirseach Veteran*,Waylay*,Aedirnian Mauler*
-2019-07-13 15:31:28,3.0.1.92,1,premium base set,,Emissary*,Vran Warrior*,Alchemist*,Wild Hunt Rider*,Cursed Knight*,Vicovaro Novice*,Impenetrable Fog*
-2019-07-13 15:30:25,3.0.1.92,1,premium base set,,Slave Hunter*,Mahakam Marauder*,Mastercrafted Spear*,Pyrotechnician*,Forbidden Magic*,Slyzard*,Incinerating Trap*
-2019-07-13 15:29:14,3.0.1.92,1,premium base set,,Mahakam Ale*,Winch*,Petri's Philter*,Slave Driver*,Vicovaro Novice*,Biting Frost*,Tuirseach Veteran*
-2019-07-13 15:27:52,3.0.1.92,1,premium base set,,Frightener: Dormant*,Dol Blathanna Sentry*,Temerian Infantry*,Dol Blathanna Archer*,Blue Stripes Commando*,Nauzicaa Brigade*,Raging Bear*
-2019-07-13 15:25:41,3.0.1.92,1,premium base set,,Raging Bear*,Werewolf*,Lyrian Arbalest*,Elven Wardancer*,Dwarven Agitator*,Experimental Remedy*,Tuirseach Veteran*
-2019-07-13 15:23:14,3.0.1.92,1,premium base set,,Assassination*,Nekker Warrior*,Dol Blathanna Sentry*,Vran Warrior*,Nilfgaardian Knight*,Golden Froth*,Battering Ram*
-2019-07-13 15:20:31,3.0.1.92,1,premium base set,,Tuirseach Bearmaster*,Fire Scorpion*,Ointment*,Poor Fucking Infantry*,Schirrú*,Ermion*,Falibor*
-2019-07-13 15:18:30,3.0.1.92,1,novigrad,,Kikimore Warrior,Swindle,Cutup Lackey,Arena Endrega,Witch Hunter Executioner,Fisstech Trafficker,Tidecloak Ransackers
-2019-07-13 15:16:42,3.0.1.92,1,crimson curse,,Svalblod Cultist,Dryad's Caress,Samum,Dryad Grovekeeper,Svalblod Priest,Oxenfurt Scholar,Forest Whisperer
-2019-07-13 15:15:08,3.0.1.92,1,monster,,Bruxa,Wyvern,Forktail,Plumard,Harpy Egg,Celaeno Harpy,Fleder
-2019-07-13 15:14:22,3.0.1.92,1,monster,,Ice Troll,Cockatrice,Bridge Troll,Siren,Celaeno Harpy,Hideous Feast,Foglet
-2019-07-13 15:13:03,3.0.1.92,1,monster,,Vran Warrior,Wyvern,Barbegazi,Arachas Nest,Fleder,Ice Troll,Harpy Egg
-2019-07-13 15:10:55,3.0.1.92,1,base set,,Vrihedd Brigade,Heymaey Protector,Mardroeme,Mahakam Ale,Dol Blathanna Bowman,Cyclops,Rivian Pikeman
-2018-11-16 18:06:22,1.0.0.15,0,base set,,Slave Hunter,Trophy Catch,Predatory Dive,Tridam Infantry,Foglet,Biting Frost,Battering Ram
-2018-11-16 18:04:41,1.0.0.15,0,base set,,Combat Engineer,Nauzicaa Sergeant,Poor Fucking Infantry,Venendal Elite,Ancient Foglet,Impenetrable Fog,Daerlan Soldier
-2018-11-16 17:57:01,1.0.0.15,0,base set,,Wyvern,Heymaey Protector,Ointment,Field Medic,An Craite Longship,Blue Stripes Scout,Impenetrable Fog
+2020-06-12 18:31,6.3.0.92,1,nilfgaard,,Ard Feainn Heavy Cavalry,Vicovaro Novice,Van Moorlehem Servant,Combat Engineer,Van Moorlehem Hunter,Hunting Pack,Imperial Diviner
+2020-06-12 18:31,6.3.0.92,1,nilfgaard,,Fangs of the Empire,Ard Feainn Heavy Cavalry,Alchemist,Imperial Diplomacy,Master of Disguise,Imperial Diviner,Assassination
+2020-06-12 18:30,6.3.0.92,1,nilfgaard,,Imperial Diplomacy,Assassination,Deithwen Arbalest,Infiltrator,Damien de la Tour,Vattier de Rideaux,Tourney Shaelmaar
+2020-06-12 18:27,6.3.0.92,1,nilfgaard,,Impera Enforcers,Viper Witcher,Menagerie Keeper,Van Moorlehem Servant,Ard Feainn Crossbowman,Daerlan Soldier,Van Moorlehem Hunter
+2020-06-12 18:26,6.3.0.92,1,nilfgaard,,Ard Feainn Light Cavalry,Ard Feainn Heavy Cavalry,Alchemist,Nauzicaa Brigade,Hunting Pack,Ard Feainn Tortoise,Viper Witcher
+2020-06-12 18:24,6.3.0.92,1,base set,,Temerian Infantry,Lyrian Cavalry,Siege Master,Aedirnian Mauler,Battering Ram,Crushing Trap,Dimun Corsair
+2020-06-12 18:23,6.3.0.92,1,nilfgaard,,Mangonel,Menagerie Keeper,Alchemist,Vicovaro Novice,Van Moorlehem Hunter*,Duchess's Informant,Master of Disguise
+2020-06-12 18:22,6.3.0.92,1,nilfgaard,,Infiltrator,Recruit,Fangs of the Empire,Duchess's Informant,Masquerade Ball,Vilgefortz,Bribery
+2020-06-12 18:21,6.3.0.92,1,nilfgaard,,Fangs of the Empire,Deithwen Arbalest,Infiltrator,Ard Feainn Tortoise,Van Moorlehem Hunter,Toussaint Knight-Errant,Imperial Diviner
+2020-06-12 18:20,6.3.0.92,1,nilfgaard,,Ard Feainn Heavy Cavalry,Standard Bearer,Venendal Elite,Nauzicaa Brigade,Daerlan Soldier,Toussaint Knight-Errant,Vicovaro Novice
+2020-06-12 18:20,6.3.0.92,1,nilfgaard,,Van Moorlehem Servant,Tourney Joust,Impera Enforcers,Imperial Golem,Ard Feainn Tortoise,Nauzicaa Brigade,Vicovaro Novice
+2020-06-12 18:19,6.3.0.92,1,nilfgaard,,Recruit,Battle Preparation,Tourney Joust,Duchess's Informant,Vicovaro Novice,Rot Tosser,Nauzicaa Brigade
+2020-06-12 18:18,6.3.0.92,1,nilfgaard,,Battle Preparation,Van Moorlehem Servant,Thirsty Dame,Rot Tosser,Daerlan Soldier,Van Moorlehem Hunter,Duchess's Informant
+2020-06-12 18:17,6.3.0.92,1,nilfgaard,,Fire Scorpion,Ard Feainn Heavy Cavalry,Combat Engineer,Nauzicaa Brigade,Ard Feainn Crossbowman,Imperial Diviner,Ard Feainn Tortoise
+2020-06-12 18:16,6.3.0.92,1,nilfgaard,,Toussaint Knight-Errant,Slave Hunter,Experimental Remedy*,Joachim de Wett,Hefty Helge*,Vreemde,Vrygheff
+2020-06-12 18:14,6.3.0.92,1,nilfgaard,,Venendal Elite,Fire Scorpion,Battle Preparation,Nauzicaa Brigade,False Ciri,Artorius Vigo,Albrich
+2020-06-12 18:04,6.3.0.92,1,nilfgaard,,Alchemist,Infiltrator,Slave Driver,Toussaint Knight-Errant,Ramon Tyrconnel,Collar,Vivienne de Tabris
+2020-06-12 18:03,6.3.0.92,1,nilfgaard,,Venendal Elite,Ducal Guard,Ard Feainn Light Cavalry,Van Moorlehem Hunter,Vanhemar,Fringilla Vigo,Roderick of Dun Tynne
+2020-06-12 18:02,6.3.0.92,1,nilfgaard,,Mangonel,Tourney Joust,Ard Feainn Light Cavalry,Imperial Diviner,Viper Witcher,Van Moorlehem Hunter,Imperial Diplomacy
+2020-06-12 18:01,6.3.0.92,1,nilfgaard,,Impera Enforcers,Deithwen Arbalest,Ointment,Nauzicaa Brigade,Ard Feainn Crossbowman,Viper Witcher,Van Moorlehem Hunter
+2020-06-12 18:01,6.3.0.92,1,nilfgaard,,Venendal Elite,Slave Driver,Battle Preparation,Experimental Remedy,Cantarella,Hefty Helge,Albrich
+2020-06-12 18:00,6.3.0.92,1,nilfgaard,,Venendal Elite,Ducal Guard,Ard Feainn Heavy Cavalry,Imperial Diviner,Hunting Pack,Imperial Diplomacy,Rot Tosser
+2020-06-12 17:59,6.3.0.92,1,nilfgaard,,Menagerie Keeper,Van Moorlehem Hunter,Tourney Joust,Viper Witcher,Emissary*,Rot Tosser,Ard Feainn Crossbowman
+2020-06-12 17:58,6.3.0.92,1,nilfgaard,,Battle Preparation,Impera Enforcers,Ard Feainn Heavy Cavalry,Rot Tosser,Duchess's Informant,Vicovaro Novice,Experimental Remedy
+2020-06-12 17:57,6.3.0.92,1,nilfgaard,,Ard Feainn Heavy Cavalry,Ducal Guard,Fangs of the Empire,Experimental Remedy,Vicovaro Novice,Hunting Pack,Imperial Diplomacy
+2020-06-12 17:56,6.3.0.92,1,nilfgaard,,Mangonel,Impera Enforcers,Slave Driver,Roderick of Dun Tynne,Nauzicaa Brigade*,Imperial Diviner,Ard Feainn Tortoise
+2020-06-12 17:55,6.3.0.92,1,nilfgaard,,Vicovaro Novice,Ard Feainn Light Cavalry,Combat Engineer,Mangonel,Albrich,Hefty Helge*,Glynnis aep Loernach
+2020-06-12 17:54,6.3.0.92,1,nilfgaard,,Thirsty Dame,Ard Feainn Light Cavalry,Mangonel,Viper Witcher,Ard Feainn Tortoise,Vicovaro Novice,Van Moorlehem Hunter
+2020-06-12 17:54,6.3.0.92,1,nilfgaard,,Battle Preparation,Tourney Joust,Battle Preparation,Experimental Remedy,Master of Disguise,Viper Witcher,Ard Feainn Tortoise
+2020-06-12 17:50,6.3.0.92,1,nilfgaard,,Alchemist,Standard Bearer,Slave Driver,Hunting Pack,Letho: Kingslayer,Vilgefortz,Vivienne de Tabris
+2020-06-12 17:46,6.3.0.92,1,nilfgaard,,Toussaint Knight-Errant,Rot Tosser,Slave Driver,Fringilla Vigo,Nauzicaa Brigade,Vicovaro Novice,Imperial Diviner
+2020-06-12 17:45,6.3.0.92,1,nilfgaard,,Standard Bearer,Slave Hunter,Slave Driver,Ard Feainn Crossbowman,Rot Tosser,Vicovaro Novice,Imperial Diplomacy
+2020-06-12 17:44,6.3.0.92,1,nilfgaard,,Thirsty Dame,Alchemist,Venendal Elite,Imperial Diviner,Daerlan Soldier,Assassination,Van Moorlehem Hunter
+2020-06-12 17:42,6.3.0.92,1,nilfgaard,,Recruit,Slave Driver,Ard Feainn Light Cavalry,Assassination,Ard Feainn Tortoise,Daerlan Soldier,Van Moorlehem Hunter
+2020-06-12 17:41,6.3.0.92,1,nilfgaard,,Ard Feainn Light Cavalry,Slave Driver,Battle Preparation,Imperial Diplomacy,Rot Tosser*,Vicovaro Novice,Nauzicaa Brigade
+2020-06-12 17:40,6.3.0.92,1,nilfgaard,,Combat Engineer,Ducal Guard,Standard Bearer,Ard Feainn Crossbowman,Van Moorlehem Hunter,Duchess's Informant,Imperial Diplomacy
+2020-06-12 17:39,6.3.0.92,1,nilfgaard,,Fire Scorpion,Alchemist,Infiltrator,Toussaint Knight-Errant,Van Moorlehem Hunter,Hunting Pack,Daerlan Soldier
+2020-06-12 17:39,6.3.0.92,1,nilfgaard,,Combat Engineer,Thirsty Dame,Fire Scorpion,Assassination,Duchess's Informant,Nauzicaa Brigade,Master of Disguise
+2020-06-12 17:37,6.3.0.92,1,nilfgaard,,Standard Bearer,Deithwen Arbalest,Impera Enforcers,Viper Witcher,Hunting Pack,Experimental Remedy,Vicovaro Novice
+2020-06-12 17:07,6.3.0.92,1,skellige,,Disgraced Brawler,Crow Messenger,An Craite Blacksmith,Svalblod Cultist,Armored Drakkar,Drummond Queensguard,Dimun Corsair
+2020-06-12 17:05,6.3.0.92,1,base set,,Blue Mountain Elite,Ban Ard Tutor,Damned Sorceress,Ancient Foglet,Dol Blathanna Bowman,Foglet*,Daerlan Soldier
+2020-06-12 17:00,6.3.0.92,1,base set,,Fire Scorpion,Panther,Hawker Support,Sabrina's Inferno,Vreemde,Harald Houndsnout,Bekker's Rockslide
+2019-07-13 20:56,3.0.1.92,1,base set,,Epidemic,Dol Blathanna Sentry,Ice Giant,Drowner,Rivian Pikeman,Biting Frost,Dimun Corsair
+2019-07-13 20:56,3.0.1.92,1,novigrad,,Kikimore Warrior,Townsfolk,Line of Credit,Eavesdrop,Tidecloak Hideaway,Eventide Plunder,Fisstech Trafficker
+2019-07-13 20:55,3.0.1.92,1,novigrad,,Arena Ghoul,Sea Jackal,Eavesdrop,Slander,Witch Hunter Executioner,Tax Collector,Halfling Safecracker
+2019-07-13 20:31,3.0.1.92,1,novigrad,,Arena Ghoul*,Cutup Lackey,Wretched Addict,Back-Alley Chemist,Eventide Plunder,Eternal Fire Disciple,Kikimore Warrior
+2019-07-13 20:30,3.0.1.92,1,novigrad,,Sly Seductress,Bare-Knuckle Brawler,Dip in the Pontar,Temple Guard,Witch Hunter,Cleaver's Muscle,Fisstech Trafficker
+2019-07-13 20:28,3.0.1.92,1,novigrad,,Townsfolk,Fisstech,Tidecloak Hideaway,Dip in the Pontar,Adalbertus Kalkstein,Pugo Boom-Breaker,Sir Skewertooth
+2019-07-13 20:27,3.0.1.92,1,novigrad,,Fence,Line of Credit,Dip in the Pontar,Eternal Fire Priest,Keeper of the Flame*,Halfling Safecracker,Blindeye Apothecary
+2019-07-13 20:26,3.0.1.92,1,novigrad,,Tax Collector,Coerced Blacksmith,Wretched Addict,Congregation,Witch Hunter*,Sewer Raiders,Eternal Fire Priest
+2019-07-13 20:24,3.0.1.92,1,crimson curse,,Vildkaarl,Disgraced Brawler,Fleder,Garkain,Brokilon Sentinel*,Cintrian Knight,Thaw
+2019-07-13 20:24,3.0.1.92,1,crimson curse,,Alp,Dryad Grovekeeper,Dryad Ranger,Pellar,Svalblod Totem,Syanna,Crimson Curse
+2019-07-13 20:23,3.0.1.92,1,crimson curse,,Cintrian Royal Guard,Feast of Blood,Fangs of the Empire,Vildkaarl,Forest Whisperer,Bruxa,Oxenfurt Scholar
+2019-07-13 20:22,3.0.1.92,1,novigrad,,Crownsplitter Thug,Firesworn Scribe,Arena Endrega,Congregation,Tax Collector,Fisstech Trafficker,Eternal Fire Inquisitor
+2019-07-13 20:21,3.0.1.92,1,novigrad,,Blindeye Apothecary,Firesworn Scribe,Congregation,Fence,Renegade Mage,Eternal Fire Disciple,Eternal Fire Inquisitor
+2019-07-13 20:20,3.0.1.92,1,novigrad,,Keeper of the Flame,Bloody Good Fun,Congregation,Arena Endrega,Ewald Borsodi,Wheel of Fortune*,Damnation
+2019-07-13 20:19,3.0.1.92,1,novigrad,,Eternal Fire Inquisitor,Back-Alley Chemist,Eavesdrop,Swindle,Sewer Raiders,Sly Seductress,Witch Hunter Executioner
+2019-07-13 20:18,3.0.1.92,1,novigrad,,Beggar,Swindle,Blindeye Apothecary,Firesworn Scribe,Cleaver's Muscle,Eternal Fire Disciple,Eternal Fire Priest
+2019-07-13 20:15,3.0.1.92,1,crimson curse,,Samum,Bruxa,Cintrian Envoy,Tempest,Artorius Vigo,Windhalm of Attre,Musicians of Blaviken
+2019-07-13 20:15,3.0.1.92,1,crimson curse,,Feast of Blood,Traveling Merchant,Dancing Star,Svalblod Butcher,Queen of the Night,Tempest,Artorius Vigo
+2019-07-13 20:14,3.0.1.92,1,crimson curse,,Cintrian Knight,Sandstorm,Dryad Grovekeeper,Cintrian Spellweaver,Cintrian Artificer,Watchman,Fleder
+2019-07-13 20:13,3.0.1.92,1,crimson curse,,Imperial Diviner,Inspirational Ballad,Dryad Grovekeeper,Menagerie Keeper,Toussaint Knight-Errant,Fleder,Watchman
+2019-07-13 20:12,3.0.1.92,1,crimson curse,,Brokilon Sentinel,Red Haze,Fangs of the Empire,Svalblod Ravager,Dryad Matron*,Cintrian Knight,Toussaint Knight-Errant
+2019-07-13 20:11,3.0.1.92,1,base set,,Tuirseach Veteran,Werewolf,Slave Driver,Slave Hunter,Experimental Remedy*,Aretuza Adept,An Craite Greatsword
+2019-07-13 20:10,3.0.1.92,1,base set,,Biting Frost,Alchemist,Deithwen Arbalest,Infiltrator,Vrihedd Brigade,Foglet,An Craite Marauder
+2019-07-13 20:10,3.0.1.92,1,base set,,Scoia'tael Neophyte,Panther,Dol Blathanna Archer,Siege Master,Dragon's Dream*,Malena,Assire var Anahid
+2019-07-13 20:09,3.0.1.92,1,base set,,Scout,Tuirseach Bearmaster,Forktail,Brokvar Hunter,Summoning Circle,False Ciri,Barclay Els
+2019-07-13 20:08,3.0.1.92,1,base set,,Vrihedd Sappers,Stammelford's Tremors,Alchemist,Mangonel,Lyrian Landsknecht,Raging Bear,Vicovaro Novice
+2019-07-13 20:06,3.0.1.92,1,novigrad,,Kikimore Warrior,Townsfolk,Sea Jackal,Line of Credit,Harald Gord,Tunnel Drill,Kurt
+2019-07-13 20:05,3.0.1.92,1,novigrad,,Sly Seductress,Slander,Shakedown,Payday,Fisstech Trafficker,Tidecloak Hideaway,Kikimore Warrior
+2019-07-13 20:04,3.0.1.92,1,novigrad,,Tidecloak Ransackers,Back-Alley Chemist,Swindle,Beggar,Tavern Brawl,Wheel of Fortune,Sir Skewertooth
+2019-07-13 20:03,3.0.1.92,1,novigrad,,Oxenfurt Naturalist,Courier,Casino Bouncers,Back-Alley Chemist,Sir Skewertooth,Caesar Bilzen,Hammond
+2019-07-13 20:01,3.0.1.92,1,novigrad,,Sewer Raiders,Back-Alley Chemist,Bloody Good Fun,Eavesdrop,Eternal Fire Disciple,Fisstech Trafficker,Crownsplitter Thug
+2019-07-13 19:59,3.0.1.92,1,crimson curse,,Pellar,Svalblod Butcher,Cintrian Royal Guard,Fangs of the Empire,Watchman*,Cintrian Artificer,Dryad Matron
+2019-07-13 19:58,3.0.1.92,1,crimson curse,,Disgraced Brawler,Dryad Fledgling,Pellar,Cintrian Spellweaver,Cintrian Knight,Traveling Merchant,Bruxa
+2019-07-13 19:58,3.0.1.92,1,crimson curse,,Watchman,Alp,Menagerie Keeper,Dryad's Caress,Imperial Diviner*,Bruxa,Dryad Matron
+2019-07-13 19:56,3.0.1.92,1,crimson curse,,Brokilon Sentinel,Disgraced Brawler,Feast of Blood,Cintrian Spellweaver,Primal Savagery,Forest Whisperer,Spring Equinox
+2019-07-13 19:54,3.0.1.92,1,crimson curse,,Tourney Joust,Dryad Grovekeeper,Traveling Merchant,Undying Thirst,Weeping Willow,Scepter of Storms,Gael
+2019-07-13 19:52,3.0.1.92,1,base set,,Tuirseach Bearmaster,Combat Engineer,Mahakam Guard,Standard Bearer,Experimental Remedy,Waylay,Dimun Corsair
+2019-07-13 19:51,3.0.1.92,1,base set,,Imperial Diplomacy,Vran Warrior,Petri's Philter,Heymaey Protector,Forbidden Magic,Harpy Egg,Tuirseach Bearmaster
+2019-07-13 19:51,3.0.1.92,1,base set,,Blue Stripes Scout,Spores,Bridge Troll,Arachas Venom*,Daerlan Soldier,Mastercrafted Spear,Rivian Pikeman
+2019-07-13 19:50,3.0.1.92,1,base set,,Swallow,Jutta an Dimun,Lyrian Scytheman,Crushing Trap,Imperial Diplomacy,Ancient Foglet,Dimun Corsair
+2019-07-13 19:49,3.0.1.92,1,base set,,Mahakam Guard,Dimun Corsair,Vran Warrior,Temerian Infantry,Slyzard,Forbidden Magic,Drummond Queensguard
+2019-07-13 19:48,3.0.1.92,1,base set,,Elven Scout,Slave Driver,Ban Ard Tutor,Crushing Trap,Elven Swordmaster,Ice Troll,Vicovaro Novice
+2019-07-13 19:47,3.0.1.92,1,base set,,Aretuza Adept,Predatory Dive,Hawker Support,Poor Fucking Infantry,Elven Swordmaster,Assassination,Blue Stripes Scout
+2019-07-13 19:47,3.0.1.92,1,base set,,Wyvern Scale Shield,Trebuchet,Half-Elf Hunter,Slave Driver,Drummond Queensguard,Impenetrable Fog,Crushing Trap
+2019-07-13 19:46,3.0.1.92,1,base set,,Assassination,Pyrotechnician,Farseer,Dimeritium Bomb,Peter Saar Gwynleve,Colossal Ifrit,Serpent Trap
+2019-07-13 19:45,3.0.1.92,1,base set,,Tuirseach Skirmisher,Pyrotechnician,Werewolf,Cursed Knight,Drummond Queensguard,Biting Frost,Dol Blathanna Bowman
+2019-07-13 15:32,3.0.1.92,1,premium base set,,An Craite Greatsword*,Deithwen Arbalest*,Temerian Infantry*,Vran Warrior*,Tuirseach Veteran*,Waylay*,Aedirnian Mauler*
+2019-07-13 15:31,3.0.1.92,1,premium base set,,Emissary*,Vran Warrior*,Alchemist*,Wild Hunt Rider*,Cursed Knight*,Vicovaro Novice*,Impenetrable Fog*
+2019-07-13 15:30,3.0.1.92,1,premium base set,,Slave Hunter*,Mahakam Marauder*,Mastercrafted Spear*,Pyrotechnician*,Forbidden Magic*,Slyzard*,Incinerating Trap*
+2019-07-13 15:29,3.0.1.92,1,premium base set,,Mahakam Ale*,Winch*,Petri's Philter*,Slave Driver*,Vicovaro Novice*,Biting Frost*,Tuirseach Veteran*
+2019-07-13 15:27,3.0.1.92,1,premium base set,,Frightener: Dormant*,Dol Blathanna Sentry*,Temerian Infantry*,Dol Blathanna Archer*,Blue Stripes Commando*,Nauzicaa Brigade*,Raging Bear*
+2019-07-13 15:25,3.0.1.92,1,premium base set,,Raging Bear*,Werewolf*,Lyrian Arbalest*,Elven Wardancer*,Dwarven Agitator*,Experimental Remedy*,Tuirseach Veteran*
+2019-07-13 15:23,3.0.1.92,1,premium base set,,Assassination*,Nekker Warrior*,Dol Blathanna Sentry*,Vran Warrior*,Nilfgaardian Knight*,Golden Froth*,Battering Ram*
+2019-07-13 15:20,3.0.1.92,1,premium base set,,Tuirseach Bearmaster*,Fire Scorpion*,Ointment*,Poor Fucking Infantry*,Schirrú*,Ermion*,Falibor*
+2019-07-13 15:18,3.0.1.92,1,novigrad,,Kikimore Warrior,Swindle,Cutup Lackey,Arena Endrega,Witch Hunter Executioner,Fisstech Trafficker,Tidecloak Ransackers
+2019-07-13 15:16,3.0.1.92,1,crimson curse,,Svalblod Cultist,Dryad's Caress,Samum,Dryad Grovekeeper,Svalblod Priest,Oxenfurt Scholar,Forest Whisperer
+2019-07-13 15:15,3.0.1.92,1,monster,,Bruxa,Wyvern,Forktail,Plumard,Harpy Egg,Celaeno Harpy,Fleder
+2019-07-13 15:14,3.0.1.92,1,monster,,Ice Troll,Cockatrice,Bridge Troll,Siren,Celaeno Harpy,Hideous Feast,Foglet
+2019-07-13 15:13,3.0.1.92,1,monster,,Vran Warrior,Wyvern,Barbegazi,Arachas Nest,Fleder,Ice Troll,Harpy Egg
+2019-07-13 15:10,3.0.1.92,1,base set,,Vrihedd Brigade,Heymaey Protector,Mardroeme,Mahakam Ale,Dol Blathanna Bowman,Cyclops,Rivian Pikeman
+2018-11-16 18:06,1.0.0.15,0,base set,,Slave Hunter,Trophy Catch,Predatory Dive,Tridam Infantry,Foglet,Biting Frost,Battering Ram
+2018-11-16 18:04,1.0.0.15,0,base set,,Combat Engineer,Nauzicaa Sergeant,Poor Fucking Infantry,Venendal Elite,Ancient Foglet,Impenetrable Fog,Daerlan Soldier
+2018-11-16 17:57,1.0.0.15,0,base set,,Wyvern,Heymaey Protector,Ointment,Field Medic,An Craite Longship,Blue Stripes Scout,Impenetrable Fog

@@ -83,28 +83,26 @@ class MainWindow(QWidget):
         self.info_lineedit_list.append(lineedit)
 
         # Filter out Leaders
-        nonleader_cards = self.cards_df[self.cards_df.group != 'Leader']
+        nonleader_cards_df = self.cards_df[self.cards_df.category != 'Leader']
 
         for i in range(4):
             combo = QComboBox(self)
             combo.setEditable(True)
             # Add an empty item so that nothing is selected to begin
             combo.addItem("")
-            combo.addItems(nonleader_cards.index.values)
+            combo.addItems(nonleader_cards_df.index.values)
             combo.lineEdit().setPlaceholderText("Card %d" % (i+1))
             self.card_combobox_list.append(combo)
             self.card_checkbox_list.append(QCheckBox(self))
 
         combo_text = ['Picked card', 'Unpicked card 1', 'Unpicked card 2']
-        # The current gwent.one does not offer rarity information
-        #rare_cards_df = self.cards_df[self.cards_df.rarity.isin(['Rare',
-                                                                 #'Epic',
-                                                                 #'Legendary'])]
+        rare_cards_df = nonleader_cards_df[nonleader_cards_df.rarity.isin(['rare', 'epic', 'legendary'])]
+
         for i in range(3):
             combo = QComboBox(self)
             combo.setEditable(True)
             combo.addItem("")
-            combo.addItems(nonleader_cards.index.values)
+            combo.addItems(rare_cards_df.index.values)
             combo.lineEdit().setPlaceholderText(combo_text[i])
             self.card_combobox_list.append(combo)
             self.card_checkbox_list.append(QCheckBox(self))
@@ -197,7 +195,7 @@ class MainWindow(QWidget):
 
     def load_cards(self):
         """
-        Opens the specified JSON file containing card details (name, group
+        Opens the specified JSON file containing card details (name, category
         and rarity). Returns a pandas dataframe of the data.
         """
         with open(self.cards_json) as infile:
@@ -206,9 +204,8 @@ class MainWindow(QWidget):
 
         cards_dict = {}
         cards_dict['name'] = [card['name'] for card in cards]
-        # The current gwent.one scraper does not offer rarity information, and limited group information (leader only)
-        cards_dict['group'] = [card['group'] for card in cards]
-        #cards_dict['rarity'] = [card['rarity'] for card in cards]
+        cards_dict['category'] = [card['category'] for card in cards]
+        cards_dict['rarity'] = [card['rarity'] for card in cards]
 
         df = pd.DataFrame(cards_dict)
         df.sort_values(by='name', ascending=True, inplace=True)

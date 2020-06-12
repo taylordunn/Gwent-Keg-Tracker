@@ -1,6 +1,8 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+from lxml import etree
+from urllib.request import urlopen
 
 def get_cards(faction):
     card_list = []
@@ -9,11 +11,17 @@ def get_cards(faction):
 
     if page.status_code == 200:
         soup = BeautifulSoup(page.content, 'html.parser')
-        card_names = soup.find_all('div', {'class': 'gscard__title'})
+        #card_names = soup.find_all('div', {'class': 'gscard__title'})
+        card_data = soup.find_all('div', {'class': 'card-data'})
 
-        for card in card_names:
-            card_name = card.find('a').text.strip()
+        for card in card_data:
+            card_name = card.find('div', {'class': 'card-name'}).find('a').text
+            card_category = card.find('div', {'class': 'card-category'}).text
+            card_body = card.find('div', {'class': 'card-body'}).text.replace("\n", " ").strip()
             card_href = card.find('a').get('href')
+            card_provisions = card.get('data-provision')
+            card_rarity = card.get('data-rarity')
+            card_faction = card.get('data-faction')
 
             print(card_name)
             #card_page = requests.get(card_href)
@@ -21,7 +29,8 @@ def get_cards(faction):
             #print(card_href)
             #card_soup = BeautifulSoup(card_page.content, 'html.parser')
 
-            card_dict = {'name': card_name, 'href': card_href, 'group': '', 'faction': faction}
+            card_dict = {'name': card_name, 'href': card_href, 'rarity': card_rarity,
+                         'faction': card_faction, 'category': card_category}
             card_list.append(card_dict)
     return card_list
 
@@ -36,20 +45,13 @@ def read_cards():
         return cards
 
 if __name__ == '__main__':
-    # As of 2019-07-13, these are the numbers of leaders per faction
-    faction_nleaders = {'Neutral': 0, 'Nilfgaard': 6, 'Northern-Realms': 6, 'Scoiatael': 6, 'Skellige': 6,
-                        'Monster': 6, 'Syndicate': 5}
 
-    # Get cards from the gwent.one fan wiki, one faction at a time
+    # Get cards from the gwent.one database, one faction at a time
     cards = []
     for faction in ['Neutral', 'Nilfgaard', 'Northern-Realms', 'Scoiatael', 'Skellige', 'Monster', 'Syndicate']:
         print(faction)
         faction_cards = get_cards(faction)
         cards.extend(faction_cards)
 
-        # Leaders are at the head of the list of cards
-        n_leaders = faction_nleaders[faction]
-        for i in range(0, n_leaders):
-            faction_cards[i]['group'] = 'Leader'
     write_cards(cards)
     cards = read_cards()
