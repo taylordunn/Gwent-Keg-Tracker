@@ -568,9 +568,7 @@ After 33(23+10) NG kegs: missing 8 cards worth 5030 scraps (opened Masquerade an
 After 38(33+5) NG kegs: same
 spare card milled: 52 common + 17 rare = 860s
 
-5040s total
-
-
+5030s total
 After buying 30 NG kegs, missing:
 Vincent Van Moorlehem = 800
 Maraal = 800
@@ -581,14 +579,9 @@ Van Moorlehem's Cupbearer = 200
 Magne Divison = 30
 Magic Lamp = 800
 
-
-
-1+1+5+1+5 = 13
-1+5 = 6
-1+5 = 6
-
-684
-2334 - 684
+----
+first shop purchase 2020-06-17
+Minstrel bundle for 200d: Minstrel avatar, Campfire border, "Minstrel" title
 
 
 

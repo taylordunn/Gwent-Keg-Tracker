@@ -123,6 +123,11 @@ class MainWindow(QWidget):
         if os.path.isfile('kegs.csv'):
             self.keg_df = pd.read_csv('kegs.csv')
             self.update_table()
+            # If kegs data exist, use the latest entry to replace placeholder text in the LineEdits
+            if len(self.keg_df) > 0:
+                for i,var in enumerate(['patch', 'prestige', 'keg_type', 'event']):
+                    if not pd.isna(self.keg_df[var][1]):
+                        self.info_lineedit_list[i].setText(str(self.keg_df[var][1]))
         else:
             self.keg_df = pd.DataFrame(columns=['date', 'patch', 'prestige', 'keg_type', 'event', 'card1', 'card2',
                                                 'card3', 'card4', 'picked_card', 'unpicked_card1', 'unpicked_card2'])
