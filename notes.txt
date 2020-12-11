@@ -584,7 +584,159 @@ first shop purchase 2020-06-17
 Minstrel bundle for 200d: Minstrel avatar, Campfire border, "Minstrel" title
 
 
+----
+Master mirror release
+2020-06-30
+834 ore - 178757 scrap - 385 rp - 6545 dust
+
+strategy: buy 50-60 kegs, after which we should have 2-3 legendaries, most bronzes, and start seeing duplicate epics
+then craft wanted cards with scrap
+
+https://docs.google.com/spreadsheets/d/15O7TL1NPNliouDGCu-IK7Kw7OkFZ9VLxzI4wfJd5u1g/edit#gid=0
+continuing story node strategy for max ore
+Crimson Curse faction tree: 26 rp for 1600 ore ---(already spent 1rp here)--> 25 rp for 1550 ore
+Northern Realms faction tree: 33 rp for 2000 ore
+Scoiatel Dana tree: 32 rp for 1900 ore
+
+After 53 kegs:
+2 legendary, amphibious assault and usurper officer (one echo and one transform, the main mechanics)
+
+Scoia'tael Filavandrel tree: 43 for 2500 + 2 base set kegs
+Monsters Faction Tree: 37 for 2150 ore
+
+---------
+Harald greatswords
+with boats (Wild Boar and Raiding Fleet)
+https://www.playgwent.com/en/decks/guides/114271
+without boats (Donar and Svalblod Totem)
+https://www.playgwent.com/en/decks/guides/114280
+
+legendaries: hemdall, [wild boar], blood eagle, morkvarg, tyrgvi = 4000 dust or 3600 without boats
+epics: gigascorpion = 400 dust
+rares and commons: none
+4400 or 4000 dust total
+
+for now: try the cheappest option, no boats with double greatsword instead of gigascorpion 
 
 
+------
+Update 7.1
+2020-08-04
+New journey: Ciri, $9.19
+
+----
+2020-08-15
+New TLG meta snapshot
+Tier 1: Hidden Cache SY
+https://www.playgwent.com/en/decks/533fe336d7d261c158032353efe05104
+
+epics/legendaries:
+tiger's eye = 800
+passiflora = 800
+oneiromancy = 800
+jacques miraculous child = 800
+korathi heatwave = 800
+philipa = 800
+imke = 800
+flying redanian = 800
+adriano the mink = 200
+lieutenant von herst = already owned
+adalbertus kalkstein = already owned
+saul de navarette = 200
+6800 total dust
+
+common/rares:
+passiflora peaches = 30
+assault = 80
+fisstech = 30
+sea jackal = already owned
+fisstech trafficker = 80
+tidecloak ransackers = 80
+urchins = 80
+380 total dust
+
+other cards to consider:
+azar javed = 800
+ewald = already owned
+dire mutated hound = 200
+seductress = already owned
+
+1750 ore -> 17 SY kegs
+saul
+one legendary (irrelevant)
+fisstech, fisstech trafficker, ransackers, urchins
+
+487 RP
+https://docs.google.com/spreadsheets/d/15O7TL1NPNliouDGCu-IK7Kw7OkFZ9VLxzI4wfJd5u1g/edit#gid=0
+continuing story node strategy for max ore
+Monsters Eredic tree: 3050 for 54 + 3 base set kegs
+only 2750 ore?
+
+28 SY kegs
+passiflora peaches
+imke
+assault
+dire mutated hound
+
+After 45 kegs: all commons/rares, missng 5800 scrap worth of (4200 in SY cards)
+
+433 RP
+Syndicate Faction tree: 1800 for 32 RP
+Nilfgaard Anna tree: 2200 for 41 RP + 2 base set kegs
+2500 ore -> 25 SY kegs
+adriano the mink
+
+After 17+28+25=70 kegs: all commons/rares/epics, missing 5600 scrap worth of legendaries (4000 in SY)
+187574 scrap - 5600 = 181974
+
+--------
+game version 7.2.0.108_7201
+big changes to leader abilities
+
+https://teamleviathangaming.com/meta/
+gwent meta report #18
+Tier 1: shieldwall NR and rage of the sea SK
+to craft shieldwall NR: 6650 dust
+to craft rage SK: 800 dust
+missing 1 legendary: Vabjorn
+
+-----
+game version 7.3.0.111_7300
+finally hit prestige 2 (gives additional quest re-roll
+
+https://www.teamelderblood.com/meta-snapshot/
+Tier 1: SC call of nature - SY cache money - SK arnjolf/patricidal fury / NR triple duel
+
+SY cache missing cards: Azar Javed (800) and Crystal Skull (800) = 1600 total scraps
+
+----
+2020-10-29
+halloween (saovine) event
+forgotten dwarven treasure:
+innkeeper avatar
+ghostly warrior title
+sauovine customs border
+50 ore
+desperate measures border
+spooky lantern avatar
 
 
+----
+2020-12-10
+Way of the Witcher expansion
+game version 8.0.0.123_8000
+note that: I think base set kegs were changed to ultimate kegs recently (all cards included, not just base set)
+
+
+4539 ore
+180k scrap
+781 rp
+
+
+After 45 WotW kegs:
+Spares cards milled = 2300 scrap (but most coming from 11 ultimate kegs + 3 premium ultimate kegs)
+missing commons: none
+missing rares: none
+epics: 5 out of 17
+legendaries: Koshchey, Haern Caduch
+ 

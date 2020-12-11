@@ -83,7 +83,8 @@ class MainWindow(QWidget):
         self.info_lineedit_list.append(lineedit)
 
         # Filter out Leaders
-        nonleader_cards_df = self.cards_df[self.cards_df.category != 'Leader']
+        #nonleader_cards_df = self.cards_df[self.cards_df.category != 'Leader']
+        nonleader_cards_df = self.cards_df[self.cards_df.color != 'leader']
 
         for i in range(4):
             combo = QComboBox(self)
@@ -126,8 +127,8 @@ class MainWindow(QWidget):
             # If kegs data exist, use the latest entry to replace placeholder text in the LineEdits
             if len(self.keg_df) > 0:
                 for i,var in enumerate(['patch', 'prestige', 'keg_type', 'event']):
-                    if not pd.isna(self.keg_df[var][1]):
-                        self.info_lineedit_list[i].setText(str(self.keg_df[var][1]))
+                    if not pd.isna(self.keg_df[var][0]):
+                        self.info_lineedit_list[i].setText(str(self.keg_df[var][0]))
         else:
             self.keg_df = pd.DataFrame(columns=['date', 'patch', 'prestige', 'keg_type', 'event', 'card1', 'card2',
                                                 'card3', 'card4', 'picked_card', 'unpicked_card1', 'unpicked_card2'])
@@ -209,7 +210,8 @@ class MainWindow(QWidget):
 
         cards_dict = {}
         cards_dict['name'] = [card['name'] for card in cards]
-        cards_dict['category'] = [card['category'] for card in cards]
+        #cards_dict['category'] = [card['category'] for card in cards]
+        cards_dict['color'] = [card['color'] for card in cards]
         cards_dict['rarity'] = [card['rarity'] for card in cards]
 
         df = pd.DataFrame(cards_dict)
