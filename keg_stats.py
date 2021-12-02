@@ -24,7 +24,7 @@ def load_cards(cards_json):
 if __name__ == '__main__':
     cards_df_current = load_cards('cards.json')
     cards_df_current.rarity = cards_df_current.rarity.str.title()
-    
+
     # Patch on August 30 added new cards, and renamed/reclassified old ones.
     cards_df_170831 = load_cards('old/cards_2017-08-31.json')
     date_170831 = pd.to_datetime('2017-08-30')
@@ -128,6 +128,6 @@ if __name__ == '__main__':
     plt.xlabel('Keg number')
     plt.ylabel('Card count')
     plt.legend()
-    plt.savefig('card_count.pdf')
+    plt.savefig('card_count.png')
 
 
