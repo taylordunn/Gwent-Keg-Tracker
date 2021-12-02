@@ -14,7 +14,7 @@ def load_cards(cards_json):
         infile.close()
     cards_dict = {}
     cards_dict['name'] = [card['name'] for card in cards]
-    cards_dict['group'] = [card['group'] for card in cards]
+    #cards_dict['group'] = [card['group'] for card in cards]
     cards_dict['rarity'] = [card['rarity'] for card in cards]
     df = pd.DataFrame(cards_dict)
     df.set_index('name', inplace=True)
@@ -23,20 +23,21 @@ def load_cards(cards_json):
 
 if __name__ == '__main__':
     cards_df_current = load_cards('cards.json')
-
+    cards_df_current.rarity = cards_df_current.rarity.str.title()
+    
     # Patch on August 30 added new cards, and renamed/reclassified old ones.
-    cards_df_170831 = load_cards('old/cards_170831.json')
+    cards_df_170831 = load_cards('old/cards_2017-08-31.json')
     date_170831 = pd.to_datetime('2017-08-30')
     
     # Returning to game after midwinter patch
-    cards_df_180209 = load_cards('old/cards_180209.csv')
+    cards_df_180209 = load_cards('old/cards_2018-02-09.csv')
     date_180209 = pd.to_datetime('2018-02-08')
 
     # Returning to game briefly before homecoming
-    cards_df_180823 = load_cards('old/cards_180823.json')
+    cards_df_180823 = load_cards('old/cards_2018-08-23.json')
     date_180823 = pd.to_datetime('2018-08-23')
 
-    kegs_df = pd.read_csv('kegs_autoload.csv')
+    kegs_df = pd.read_csv('gwent_keg_tracker/kegs_autoload.csv')
     kegs_df = kegs_df[['date', 'card1', 'card2', 'card3', 'card4',
                        'picked_card']]
     kegs_df.date = pd.to_datetime(kegs_df.date)
@@ -78,11 +79,11 @@ if __name__ == '__main__':
             card_name = keg.loc[key]
             if '*' in card_name:
                 card_name = card_name.split('*')[0] 
-                card_rarity = cards_df.ix[card_name].rarity
+                card_rarity = cards_df.loc[card_name].rarity
                 premium_counts[card_rarity] += 1
                 premium_counts['total'] += 1
             else:
-                card_rarity = cards_df.ix[card_name].rarity
+                card_rarity = cards_df.loc[card_name].rarity
             rarity_counts[card_rarity] += 1
             if card_rarity != 'Common': counter[card_rarity][-1] += 1
     
